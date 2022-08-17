@@ -58,7 +58,7 @@ Lembre-se, todos os projetos que você desenvolve aqui na Trybe fazem parte do s
   <summary><strong>🗓 Data de Entrega</strong></summary><br />
   
   * Este projeto é individual;
-  * São `X` dias de projeto;
+  * São `1` dia de projeto;
   * Data para entrega final do projeto: `25/08/2022 14:00`.
 
 </details>
