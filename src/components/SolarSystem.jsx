@@ -1,4 +1,5 @@
 import React from 'react';
+import PlanetCard from './PlanetCard';
 import Title from './Title';
 
 class SolarSystem extends React.Component {
@@ -7,6 +8,7 @@ class SolarSystem extends React.Component {
       <>
         <div data-testid="solar-system" />
         <Title headline="Planetas" />
+        <PlanetCard planetName="Terra" planetImage="path-to-image" />
       </>
 
     );
