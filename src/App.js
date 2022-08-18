@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from './components/Header';
-
+import SolarSystem from './components/Solar-system';
 
 class App extends React.Component {
   render() {
     return (
-      <Header title='test' />
+      <Header />
+     <SolarSystem />
     );
   }
 }
