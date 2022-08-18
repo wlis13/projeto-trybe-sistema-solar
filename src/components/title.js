@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import propTypes from 'prop-types';
 
 class Title extends React.Component {
   render() {
@@ -11,3 +12,7 @@ class Title extends React.Component {
 }
 
 export default Title;
+
+Title.propTypes = {
+  headline: propTypes.string.isRequired,
+};
