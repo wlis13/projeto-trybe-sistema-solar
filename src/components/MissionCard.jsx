@@ -4,9 +4,9 @@ import propType from 'prop-types';
 
 class MissionCard extends React.Component {
   render() {
-    console.log(this.props);
     const { missoes } = this.props;
     const { name, year, country, destination } = missoes;
+    console.log();
     return (
 
       <div data-testid="mission-card" className="MissionBlock">
@@ -22,10 +22,9 @@ class MissionCard extends React.Component {
 export default MissionCard;
 
 MissionCard.propType = {
-  children: propType.any,
-  MissionCard: propType.func,
-  name: propType.string.isRequired,
-  year: propType.string.isRequired,
-  country: propType.string.isRequired,
-  destination: propType.string.isRequired,
+  missoes: propType.object.isRequired,
+  name: propType.object.isRequired,
+  year: propType.object.isRequired,
+  country: propType.object.isRequired,
+  destination: propType.object.isRequired,
 };
