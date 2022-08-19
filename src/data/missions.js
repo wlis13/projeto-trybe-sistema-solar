@@ -59,9 +59,9 @@ const Missions = [
   },
   {
     name: 'Galileo',
-    year: '1996',
+    year: '1989',
     country: USA,
-    destination: 'Marte',
+    destination: 'Júpiter',
   },
   {
     name: 'Mars Pathfinder',
