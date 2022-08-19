@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from '../App';
@@ -31,6 +32,4 @@ describe('1 - Crie um componente chamado `Header`', () => {
     const headerTitle = screen.getByRole('heading', { level: 1 });
     expect(headerTitle).toHaveTextContent(/Sistema Solar/i);
   });
-
-  
 });

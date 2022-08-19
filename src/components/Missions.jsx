@@ -6,9 +6,8 @@ import MissionsList from '../data/missions';
 class Missions extends React.Component {
   render() {
     return (
-      <>
-        <div data-testid="missions" />
-        <Title handline="Missões" />
+      <div data-testid="missions">
+        <Title headline="Missões" />
         {MissionsList.map((itens) => (
           <MissionCard
             name={ itens.name }
@@ -18,7 +17,7 @@ class Missions extends React.Component {
             key={ itens.name }
           />
         ))}
-      </>
+      </div>
     );
   }
 }

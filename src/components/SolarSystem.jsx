@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
 import React from 'react';
 import PlanetCard from './PlanetCard';
-import Title from './Title';
 import planets from '../data/planets';
+import Title from './Title';
 
 class SolarSystem extends React.Component {
   render() {
