@@ -1,9 +1,10 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import MissionCard from '../components/MissionCard';
 
 const missionTest = {
-  year: "2021",
+  year: '2021',
   name: 'Siberiano',
   country: 'URSS',
   destination: 'Lua',
@@ -33,7 +34,7 @@ describe('9 - Crie um componente chamado `MissionCard`', () => {
       />,
     );
 
-    expect(screen.getByTestId("mission-card")).toBeInTheDocument();
+    expect(screen.getByTestId('mission-card')).toBeInTheDocument();
   });
 
   it('Será validado se é renderizado o texto recebido pela prop `name`', () => {
@@ -65,9 +66,9 @@ describe('9 - Crie um componente chamado `MissionCard`', () => {
 
     const missionYear = screen.getByTestId('mission-year');
 
-    expect(missionYear).toHaveTextContent("2021");
+    expect(missionYear).toHaveTextContent('2021');
   });
-  
+
   it('Será validado se é renderizado o texto recebido pela prop `country`', () => {
     const { year, name, country, destination } = missionTest;
     render(
@@ -83,7 +84,7 @@ describe('9 - Crie um componente chamado `MissionCard`', () => {
 
     expect(missionCountry).toHaveTextContent('URSS');
   });
-  
+
   it('Será validado se é renderizado o texto recebido pela prop `destination`', () => {
     const { year, name, country, destination } = missionTest;
     render(
