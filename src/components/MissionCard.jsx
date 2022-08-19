@@ -22,7 +22,7 @@ class MissionCard extends React.Component {
 export default MissionCard;
 
 MissionCard.propType = {
-  missoes: propType.object.isRequired,
+  missoes: propType.array.isRequired,
   name: propType.string.isRequired,
   year: propType.string.isRequired,
   country: propType.string.isRequired,
