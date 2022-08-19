@@ -8,13 +8,13 @@ class MissionCard extends React.Component {
     const { missoes } = this.props;
     const { name, year, country, destination } = missoes;
     return (
-      <>
-        <div data-testid="mission-card" />
-        <p data-testid="mission-name">{name}</p>
-        <p data-testid="mission-year">{year}</p>
-        <p data-testid="mission-country">{country}</p>
-        <p data-testid="mission-destination">{destination}</p>
-      </>
+
+      <div data-testid="mission-card" className="MissionBlock">
+        <p data-testid="mission-name" className="MissionsUnid">{name}</p>
+        <p data-testid="mission-year" className="MissionsUnid">{year}</p>
+        <p data-testid="mission-country" className="MissionsUnid">{country}</p>
+        <p data-testid="mission-destination" className="MissionsUnid">{destination}</p>
+      </div>
     );
   }
 }
@@ -22,7 +22,7 @@ class MissionCard extends React.Component {
 export default MissionCard;
 
 MissionCard.propType = {
-  missoes: propType.string.isRequired,
+  missoes: propType.object.isRequired,
   name: propType.string.isRequired,
   year: propType.string.isRequired,
   country: propType.string.isRequired,
